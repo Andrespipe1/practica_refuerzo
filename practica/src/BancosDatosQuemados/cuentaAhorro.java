@@ -6,6 +6,16 @@ public class cuentaAhorro extends CuentaBancaria{
         super(numCuenta,saldo);
         this.tasaInteres=tasaInteres;
     }
+    @Override
+    public void depositar(double monto){
+        double saldoFinal=getSaldo()+monto;
+        System.out.println(saldoFinal);
+    }
+    @Override
+    public void retirar(double monto){
+        double saldoFinal=getSaldo()-monto;
+        System.out.println(saldoFinal);
+    }
     public void calcularInteres(int tiempo){
         double interes=getSaldo()+(tasaInteres/100)*tiempo;
         double saldoFinal=getSaldo()+interes;
