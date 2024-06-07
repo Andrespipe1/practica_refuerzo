@@ -7,4 +7,7 @@ public class cuentaAhorro extends CuentaBancaria{
         this.tasaInteres=tasaInteres;
     }
 
+    public void calcularInteres(){
+
+    }
 }

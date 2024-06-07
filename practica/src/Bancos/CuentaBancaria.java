@@ -16,11 +16,11 @@ public class CuentaBancaria {
         return saldo;
     }
     public void depositar(double monto){
-        saldo=saldo+monto;
-        System.out.println(saldo);
+        double saldoFinal=saldo+monto;
+        System.out.println(saldoFinal);
     }
     public void retirar(double monto){
-        saldo=saldo-monto;
-        System.out.println(saldo);
+        double saldoFinal=saldo-monto;
+        System.out.println(saldoFinal);
     }
 }
