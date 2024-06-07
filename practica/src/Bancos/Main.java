@@ -22,6 +22,7 @@ public class Main {
                 System.out.println("Retiro");
                 c1.retirar(50);
                 c2.retirar(20);
+                c2.calcularInteres(2);
                 break;
             default:
                 System.out.println("Opción no válida");
