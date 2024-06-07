@@ -1,8 +1,8 @@
 package Bancos;
 
 public class CuentaBancaria {
-    int numCuenta;
-    double saldo;
+    private int numCuenta;
+    private double saldo;
     public CuentaBancaria(int numCuenta,double saldo){
         this.numCuenta=numCuenta;
         this.saldo=saldo;
@@ -15,8 +15,8 @@ public class CuentaBancaria {
     public double getSaldo() {
         return saldo;
     }
-    public void depositar(double monto){
+    private void depositar(double monto){
 
     }
-    public void retirar(double monto){}
+    private void retirar(double monto){}
 }
