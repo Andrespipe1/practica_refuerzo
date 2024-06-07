@@ -1,4 +1,4 @@
-package Bancos;
+package BancosDatosQuemados;
 
 public class cuentaAhorro extends CuentaBancaria{
     double tasaInteres;

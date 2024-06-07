@@ -1,4 +1,4 @@
-package Bancos;
+package BancosDatosQuemados;
 
 public class CuentaBancaria {
     private int numCuenta;
