@@ -8,11 +8,13 @@ public class cuentaAhorro extends CuentaBancaria{
     }
     @Override
     public void depositar(double monto){
+        System.out.println("Cuenta Ahorros");
         double saldoFinal=getSaldo()+monto;
         System.out.println(saldoFinal);
     }
     @Override
     public void retirar(double monto){
+        System.out.println("Cuenta Ahorros");
         double saldoFinal=getSaldo()-monto;
         System.out.println(saldoFinal);
     }

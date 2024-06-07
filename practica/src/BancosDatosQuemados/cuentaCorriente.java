@@ -10,6 +10,18 @@ class cuentaCorriente extends CuentaBancaria {
         this.limitedias = limitedias;
     }
 
+    @Override
+    public void retirar(double monto){
+        System.out.println("Cuenta Corriente");
+        double saldoFinal=getSaldo()-monto;
+        System.out.println(saldoFinal);
+    }
+    @Override
+    public void depositar(double monto){
+        System.out.println("Cuenta Corriente");
+        double saldoFinal=getSaldo()+monto;
+        System.out.println(saldoFinal);
+    }
     public void limDescubierto(double monto) {
         if (limitedias >= 7) {
             System.out.println("Lego al limite de 7 dias se le aplicara un cargo adicional si no cancela");
