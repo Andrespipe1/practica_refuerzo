@@ -1,4 +1,4 @@
-package Bancos;
+package BancosDatosQuemados;
 
 class cuentaCorriente extends CuentaBancaria {
     double limiteDescubierto;

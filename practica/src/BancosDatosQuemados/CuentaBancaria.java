@@ -1,4 +1,4 @@
-package Bancos;
+package BancosDatosQuemados;
 
 public class CuentaBancaria {
     private int numCuenta;
@@ -16,10 +16,12 @@ public class CuentaBancaria {
         return saldo;
     }
     public void depositar(double monto){
+        System.out.println("Deposito");
         double saldoFinal=saldo+monto;
         System.out.println(saldoFinal);
     }
     public void retirar(double monto){
+        System.out.println("Retiro");
         double saldoFinal=saldo-monto;
         System.out.println(saldoFinal);
     }
