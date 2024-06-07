@@ -15,12 +15,18 @@ public class CuentaBancaria {
     public double getSaldo() {
         return saldo;
     }
+
+
     public void depositar(double monto){
+        System.out.println("Cuenta N°: "+getNumCuenta());
+        System.out.println("Saldo:"+getSaldo());
         System.out.println("Deposito");
-        double saldoFinal=saldo+monto;
+        double saldoFinal=getSaldo()+monto;
         System.out.println(saldoFinal);
     }
     public void retirar(double monto){
+        System.out.println("Cuenta N°: "+getNumCuenta());
+        System.out.println("Saldo:"+getSaldo());
         System.out.println("Retiro");
         double saldoFinal=saldo-monto;
         System.out.println(saldoFinal);
