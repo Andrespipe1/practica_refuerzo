@@ -3,21 +3,25 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
         CuentaBancaria c1 = new CuentaBancaria(154654,1500);
+        cuentaAhorro c2 = new cuentaAhorro(154654,1000,17.80);
         Scanner scanner = new Scanner(System.in);
         System.out.println("----Bienvenido-----");
         System.out.println("----Ingrese una opción-----");
         System.out.println("Menú:");
-        System.out.println("1. Depositar 1");
-        System.out.println("2. Retirar 2");
+        System.out.println("1. Depositar");
+        System.out.println("2. Retirar");
+        System.out.print("Ingrese una opcion: ");
         int opcion = scanner.nextInt();
         switch (opcion) {
             case 1:
                 System.out.println("Deposito");
                 c1.depositar(200.65);
+                c2.depositar(20);
                 break;
             case 2:
                 System.out.println("Retiro");
                 c1.retirar(50);
+                c2.retirar(20);
                 break;
             default:
                 System.out.println("Opción no válida");
