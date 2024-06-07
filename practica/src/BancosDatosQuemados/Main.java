@@ -27,13 +27,13 @@ public class Main {
                 c2.retirar(20);
                 break;
             case 3:
-                System.out.println("Retiro");
+                System.out.println("Limite Descubierto");
                 c1.retirar(50);
                 c2.retirar(20);
                 c3.limDescubierto(2000);
                 break;
             case 4:
-                System.out.println("Retiro");
+                System.out.println("Interes");
                 c1.retirar(50);
                 c2.retirar(20);
                 c2.calcularInteres(2);
